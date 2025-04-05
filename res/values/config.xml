@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2025 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Array of keycodes for special keys on device.
+         Order & size must match with keyhandler_packages -->
+    <integer-array name="config_remoteSpecialKeyCode">
+        <item>170</item> <!-- KEYCODE_TV -->
+        <item>176</item> <!-- KEYCODE_SETTINGS -->
+        <item>190</item> <!-- KEYCODE_BUTTON_3 -->
+        <item>191</item> <!-- KEYCODE_BUTTON_4 -->
+        <item>193</item> <!-- KEYCODE_BUTTON_6 -->
+        <item>194</item> <!-- KEYCODE_BUTTON_7 -->
+        <item>195</item> <!-- KEYCODE_BUTTON_8 -->
+        <item>225</item> <!-- KEYCODE_PAIRING -->
+        <item>187</item> <!-- KEYCODE_SWITCH -->
+    </integer-array>
+
+    <!-- Array of packages or intent actions for special keys on device.
+         Order & size must match with keyhandler_keycodes -->
+    <string-array name="config_remoteSpecialActionOrPackage">
+        <item>com.google.android.tv</item>
+        <item>android.settings.SETTINGS</item> <!-- This is an intent -->
+        <item>com.google.android.youtube.tv</item>
+        <item>com.netflix.ninja</item>
+        <item>com.disney.disneyplus</item>
+        <item>com.hbo.hbonow</item>
+        <item>com.android.vending</item>
+        <item>com.google.android.intent.action.CONNECT_INPUT</item>
+        <item>org.lineageos.tv.launcher.SYSTEM_OPTIONS</item>
+    </string-array>
+
+</resources>
